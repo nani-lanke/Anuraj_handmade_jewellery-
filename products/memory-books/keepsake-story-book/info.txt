@@ -1,0 +1,3 @@
+﻿name: Sample - Keepsake Memory Book
+price: 
+description: SAMPLE PRODUCT - replace these images with your own. Demonstrates a product with multiple gallery images, a description and related items. A handcrafted memory book to treasure your favourite moments.
