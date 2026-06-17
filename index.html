@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnuRaj Jewellery — Timeless Elegance. Crafted for You.</title>
+  <meta name="description" content="AnuRaj Jewellery — handmade jewellery, silk thread bangles, hair pins, gift boxes, memory boxes, photo frames and handcrafted gifts. Timeless elegance, crafted for you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="main_items/carousel.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' x='5'>💎</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AR</span>
+        <span class="brand-text">
+          <strong data-brand-name>AnuRaj</strong>
+          <span data-brand-suffix>JEWELLERY</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html#collections">Collections</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-gold" data-wa data-wa-text="Hello AnuRaj Jewellery! I'd like to make an inquiry.">WhatsApp Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <p class="eyebrow">Handcrafted with love</p>
+      <h1><span data-brand-name>AnuRaj</span> <span class="shine">Jewellery</span></h1>
+      <div class="hero-taglines tagline-rotator" id="tagline-rotator">Timeless Elegance. Crafted for You.</div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#gallery">Explore the Collection</a>
+        <a class="btn btn-ghost" data-wa data-wa-text="Hello AnuRaj Jewellery! I'd like to make an inquiry.">Inquire on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Collections / Categories ===== -->
+  <section id="collections">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Shop by category</p>
+        <h2>Our Collections</h2>
+        <p>From sparkling bangles to heartfelt memory boxes — explore every handcrafted treasure.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="cat-carousel">
+        <div class="cat-grid" id="category-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Product Gallery ===== -->
+  <section id="gallery" class="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Handpicked for you</p>
+        <h2>Featured Creations</h2>
+        <p>Tap any piece to view more photos, details and related items.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="product-carousel">
+        <div class="product-grid" id="product-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <img src="assets/brand-banner.jpeg" alt="AnuRaj Jewellery handcrafted pieces" />
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Our story</p>
+          <h2>Grace in Every Detail</h2>
+          <p>At <strong>AnuRaj Jewellery</strong>, every piece is lovingly handmade — a perfect blend of tradition and trend. From vibrant silk thread bangles and delicate hair pins to keepsake memory boxes and bespoke gift sets, each creation is crafted to celebrate your most precious moments.</p>
+          <p>We believe beauty lives in the little details. That's why every stone, thread and finish is chosen with care to bring you elegance you can treasure for years.</p>
+          <div class="feature-row">
+            <div class="feature"><div class="num">100%</div><small>Handmade with love</small></div>
+            <div class="feature"><div class="num">9+</div><small>Craft categories</small></div>
+            <div class="feature"><div class="num">∞</div><small>Custom designs</small></div>
+          </div>
+          <div style="margin-top:1.8rem">
+            <a class="btn btn-outline" href="#gallery">Browse Creations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" style="color:var(--gold-300)">Loved by customers</p>
+        <h2>Kind Words</h2>
+        <p>Real reviews from people who cherish their AnuRaj pieces.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="review-carousel">
+        <div class="review-grid" id="review-grid"></div>
+      </div>
+
+      <div class="review-form-wrap reveal">
+        <h3>Leave a Review</h3>
+        <form id="review-form">
+          <div class="rating-input">
+            <input type="radio" id="s5" name="rating" value="5" checked /><label for="s5" title="5 stars">★</label>
+            <input type="radio" id="s4" name="rating" value="4" /><label for="s4" title="4 stars">★</label>
+            <input type="radio" id="s3" name="rating" value="3" /><label for="s3" title="3 stars">★</label>
+            <input type="radio" id="s2" name="rating" value="2" /><label for="s2" title="2 stars">★</label>
+            <input type="radio" id="s1" name="rating" value="1" /><label for="s1" title="1 star">★</label>
+          </div>
+          <div class="form-field"><input type="text" name="name" placeholder="Your name" required /></div>
+          <div class="form-field"><textarea name="text" rows="3" placeholder="Share your experience..." required></textarea></div>
+          <div style="text-align:center"><button type="submit" class="btn btn-gold">Post Review</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Let's Create Something Beautiful</h2>
+        <p>Have a question or a custom request? We'd love to hear from you.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Contact Details</h3>
+          <ul class="contact-list">
+            <li><span class="contact-icon">&#128241;</span><div><strong>Phone / WhatsApp</strong><a id="contact-phone-link" href="#"><span id="contact-phone">+91 98765 43210</span></a></div></li>
+            <li><span class="contact-icon">&#9993;</span><div><strong>Email</strong><a id="contact-email-link" href="#"><span id="contact-email">anurajjewellery@example.com</span></a></div></li>
+            <li><span class="contact-icon">&#128205;</span><div><strong>Location</strong><span id="contact-location">India</span></div></li>
+            <li><span class="contact-icon">&#128336;</span><div><strong>Hours</strong><span id="contact-hours">Mon – Sat, 10 AM – 7 PM</span></div></li>
+          </ul>
+          <div style="margin-top:1.6rem">
+            <a class="btn btn-primary" data-wa data-wa-text="Hello AnuRaj Jewellery! I'd like to make an inquiry.">&#128172; Chat on WhatsApp</a>
+          </div>
+          <p style="margin-top:1.6rem;font-weight:600;color:var(--wine-700)">Follow us</p>
+          <div class="social-row" data-social></div>
+        </div>
+        <div class="map-embed" id="map-embed"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-mark">AR</span>
+            <span class="brand-text"><strong data-brand-name>AnuRaj</strong><span data-brand-suffix>JEWELLERY</span></span>
+          </div>
+          <p>Timeless elegance, crafted for you. Handmade jewellery, bangles, gift boxes and keepsakes made with love and the finest detail.</p>
+          <div class="social-row" data-social></div>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul data-cat-list></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a data-wa data-wa-text="Hello AnuRaj Jewellery!">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span data-year></span> <span data-brand-name>AnuRaj</span> Jewellery. Handcrafted with &#10084; · All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" data-wa data-wa-text="Hello AnuRaj Jewellery! I'd like to make an inquiry." aria-label="Chat on WhatsApp">&#128172;</a>
+
+  <!-- Data first, then scripts -->
+  <script src="data/config.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/home.js"></script>
+  <script src="main_items/carousel.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

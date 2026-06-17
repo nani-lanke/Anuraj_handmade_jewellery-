@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collection — AnuRaj Jewellery</title>
+  <meta name="description" content="Browse handcrafted creations by category at AnuRaj Jewellery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' x='5'>💎</text></svg>" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AR</span>
+        <span class="brand-text"><strong data-brand-name>AnuRaj</strong><span data-brand-suffix>JEWELLERY</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#collections">Collections</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="nav-cta"><a class="btn btn-gold" data-wa data-wa-text="Hello AnuRaj Jewellery!">WhatsApp Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow" style="color:var(--gold-300)">AnuRaj Collection</p>
+      <h1 id="cat-title">Products</h1>
+      <p id="cat-sub"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#collections">Collections</a> / <span id="cat-title-crumb"></span></div>
+      <div class="filter-bar" id="cat-chips" style="margin-bottom:2.5rem"></div>
+      <div class="product-grid" id="category-products"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-mark">AR</span>
+            <span class="brand-text"><strong data-brand-name>AnuRaj</strong><span data-brand-suffix>JEWELLERY</span></span>
+          </div>
+          <p>Timeless elegance, crafted for you. Handmade jewellery, bangles, gift boxes and keepsakes made with love.</p>
+          <div class="social-row" data-social></div>
+        </div>
+        <div class="footer-col"><h4>Collections</h4><ul data-cat-list></ul></div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year></span> <span data-brand-name>AnuRaj</span> Jewellery. Handcrafted with &#10084;</div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa data-wa-text="Hello AnuRaj Jewellery!" aria-label="Chat on WhatsApp">&#128172;</a>
+
+  <script src="data/config.js"></script>
+  <script src="data/products.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/category.js"></script>
+  <script src="js/admin.js"></script>
+  <script>
+    // keep the breadcrumb in sync with the title
+    document.addEventListener("DOMContentLoaded", function () {
+      var t = document.getElementById("cat-title");
+      var c = document.getElementById("cat-title-crumb");
+      if (t && c) { var sync = function(){ c.textContent = t.textContent; }; sync(); setTimeout(sync, 50); }
+    });
+  </script>
+</body>
+</html>
