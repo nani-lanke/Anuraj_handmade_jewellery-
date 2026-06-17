@@ -1,0 +1,3 @@
+﻿name: Sample - Celebration Gift Box
+price: 
+description: SAMPLE PRODUCT - replace these images with your own. A beautifully curated handmade gift box, perfect for birthdays, anniversaries and festive surprises.
