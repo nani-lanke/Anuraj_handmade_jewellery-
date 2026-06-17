@@ -1,0 +1,36 @@
+AnuRaj Jewellery — main_items folder
+=====================================
+This folder holds the dedicated assets for the cat-carousel section
+on index.html (the "Our Collections" horizontal category carousel).
+
+Contents
+--------
+- carousel.css   Styling for .cat-carousel / .cat-grid / .cat-card / .cat-badge.
+                 (Moved out of css/styles.css.)
+- carousel.js    Renders the category cards into #category-grid.
+                 (Moved out of js/home.js; exposes window.ANURAJ_renderCategories.)
+- notes.txt      This file.
+- mai_images/    Previously-unused image folder, relocated here. Not referenced
+                 by any code.
+- second_images/ Previously-unused image folder, relocated here. Not referenced
+                 by any code.
+
+How it is wired
+---------------
+index.html links both files:
+    <link rel="stylesheet" href="main_items/carousel.css" />   (in <head>)
+    <script src="main_items/carousel.js"></script>             (before </body>)
+carousel.js runs on DOMContentLoaded and only acts if #category-grid exists.
+
+Shared assets NOT moved here (on purpose)
+-----------------------------------------
+1. Cover images: each category card shows a product's main.* image from
+   products/<category>/<product>/. Those files are shared with the product
+   gallery, the category pages and the product modal, AND their paths are
+   regenerated automatically into data/products.js by update-gallery.ps1
+   (Update-Gallery.bat). Moving them would break the gallery and would be
+   undone on the next build, so they stay in products/.
+
+2. Scrollbar styling for .cat-grid lives in css/styles.css in a combined
+   rule shared with .review-grid and .product-grid. Splitting it out would
+   duplicate the rule, so it was left in place.
